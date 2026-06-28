@@ -1,0 +1,2 @@
+# Ignore the heavy trade-level intermediate Parquet (552MB)
+data/impact_trade_level.parquet
