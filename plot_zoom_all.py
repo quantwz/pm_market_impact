@@ -237,7 +237,7 @@ def plot_case(df: pd.DataFrame, case_info: dict) -> None:
     for ext in ("pdf", "png"):
         path = os.path.join(PLOTS_DIR, f"{case_info['filename']}.{ext}")
         fig.savefig(path, bbox_inches="tight")
-        print(f"  Saved → {path}")
+        print(f"  Saved -> {path}")
     plt.close(fig)
 
 

@@ -293,7 +293,7 @@ def main() -> None:
     for name, tbl in tables.items():
         path = os.path.join(OUT_DIR, f"{name}_impacts.parquet")
         tbl.to_parquet(path, index=False)
-        log.info(f"   {name}_impacts.parquet  →  {len(tbl):,} rows")
+        log.info(f"   {name}_impacts.parquet  ->  {len(tbl):,} rows")
 
     log.info("═══ Pipeline complete ═══")
 

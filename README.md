@@ -22,6 +22,18 @@ This repository contains a quantitative pipeline for analyzing market impact and
 
 ![Figure 3](/plots/fig3_impact_by_expiry.png)
 
+### 📊 Filtered Microstructure Curves (Trade Size $\ge$ $100)
+To focus on more substantial market orders, we provide a parallel set of analysis figures filtering out trades smaller than $100. This removes retail noise (which accounts for ~88% of all trades, leaving ~3.8M trades for analysis).
+
+* **Filtered Figure 1: Mean Price Impact by Category ($\ge$ $100)**
+  * ![Filtered Figure 1](/plots/fig1_impact_by_category_filtered.png)
+
+* **Filtered Figure 2: Mean Impact Conditional on Prior Probability ($\ge$ $100)**
+  * ![Filtered Figure 2](/plots/fig2_impact_by_prob_level_filtered.png)
+
+* **Filtered Figure 3: Mean Impact Conditional on Time to Expiry ($\ge$ $100)**
+  * ![Filtered Figure 3](/plots/fig3_impact_by_expiry_filtered.png)
+
 ### Liquidity Mapping
 * **Figure 8: Trade Size USD ($S$) vs. ADV Ratio ($S_{\mathrm{ADV}}$)**
   * A log-log panel plot showing how absolute trade sizes map to ADV-fractions. Since $S_{\mathrm{ADV}} = S / \text{ADV}$, the vertical shift of each line directly visualizes the baseline average daily volume ($\text{ADV}$) for that segment, explaining why absolute trades have a much smaller relative footprint in Macro than in Politics.

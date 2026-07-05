@@ -151,7 +151,7 @@ def generate_relationship_plot() -> None:
 
     df = pd.read_parquet(trade_path)
     
-    fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(10.5, 3.8))
+    fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(10.5, 3.8), sharey=True)
 
     # --- Panel (a): By Category ---
     print("Computing category sizes...")
@@ -214,7 +214,7 @@ def generate_relationship_plot() -> None:
     for ext in ("pdf", "png"):
         path = os.path.join(PLOTS_DIR, f"fig8_size_relationship.{ext}")
         fig.savefig(path, bbox_inches="tight")
-        print(f"  Saved → {path}")
+        print(f"  Saved -> {path}")
     plt.close(fig)
 
 
