@@ -1,0 +1,15 @@
+.gcloudignore
+.git
+.gitignore
+data/
+artifacts/
+plots/
+papers/
+doc/
+__pycache__/
+*.db
+*.csv
+*.parquet
+*.ipynb
+*.bin
+!requirements.txt
